@@ -48,7 +48,7 @@
 			overflow: auto;
 		}
 
-		.search {
+		#google_translate_element{
 			float: right;
 			margin: 20px;
 			margin-top: 4px;
@@ -56,11 +56,11 @@
 
 		}
 		.heading {
-			text-align:center ;
-			width: 1120px;
-			font-size:40px;
-			text-decoration:underline;
-			
+			display: inline-block;
+			text-align: center;
+			margin-left: 27%;
+			padding-right: 25px;
+			text-decoration: underline;
 
 		}
 
@@ -207,6 +207,7 @@
 	 .call {
 			display:flex;
 			flex-direction: row;
+			
 		}
 	</style>
 </head>
@@ -215,11 +216,11 @@
 	<header>
 		<img src="https://media.istockphoto.com/vectors/hand-holding-torch-vector-id165072006" class="weblogo"
 			width="121px" alt="LOGO">
-			<span class="heading">Welcome To My First Website</span>
-			<br>
-			<span>LOGO</span>
+			<h1 class="heading">Welcome To My First Website<h1>
+			
+			
 		<div class="image">
-			<img src="https://scontent.fagr1-2.fna.fbcdn.net/v/t39.30808-6/311266973_133647156085431_3290951804261773713_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=174925&_nc_ohc=-F14HDC5uewAX9zrbY6&_nc_ht=scontent.fagr1-2.fna&oh=00_AT9RfTrqUFqSHpcaMk0p2-UBRYC_AElZqBslm3CfWIkepA&oe=634C80E7"
+			<img src="https://scontent.fagr1-2.fna.fbcdn.net/v/t39.30808-6/311266973_133647156085431_3290951804261773713_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=174925&_nc_ohc=UBz340RSEvsAX8EzlQt&_nc_ht=scontent.fagr1-2.fna&oh=00_AT_A6IL5Y_ByUi_WoJH7cQJst6Lq6mq7bWbrgfZr8QxO6g&oe=63526FA7"
 				width="121px" alt="image"></a>
 		</div>
 		<h4><u>VISHESH YADAV</u></h4>
@@ -228,20 +229,38 @@
 		<nav id="navbar">
 			<ul>
 
-				<li><a href="https://vishu1524.github.io/Home/">Home</a></li>
+				<li><a href="#">Home</a></li>
 				<li><a href="https://www.freecodecamp.org/news/html-css-and-javascript-explained-for-beginners/"
 						target="_blank">About</a></li>
 				<li> <a href="#">Help</a></li>
-				<li><a href="https://vishu1524.github.io/phone/">Contact</a></li>
-				<div class="search">
-					<input type="text" name="search" placeholder="search box">
-				</div>
+				<li><a href="#">Contact</a></li>	</ul>
+				<div id="google_translate_element"></div>
 
-			</ul>
+				<script type="text/javascript">
+					function googleTranslateElementInit() {
+						new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+					}
+				</script>
+
+				<script type="text/javascript"
+					src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+		
 
 		</nav>
 		<br>
-		<p> Hello friends </p>
+		<p style="margin-left:8px"> Hello friends </p>
+		<h5 style="margin-left:8px">How are you ?</h5>
+		<form action="action.php">
+		<label for="optiona">
+			<input type="radio" name="option" id="optiona">Fine
+		</label>
+		<label for="optionb">
+			<input type="radio" name="option" id="optionb">Not fine
+		</label>
+		<br>
+		<br>
+	</form>
 	</header>
 	<main>
 		<secction>
@@ -249,7 +268,7 @@
 			<div class="sampark">
         <div class="contact">
             <h3>Feel Free To Contact us!</h3>
-			<img src="https://scontent.fagr1-2.fna.fbcdn.net/v/t39.30808-6/294659770_111672228282924_8020719861959621506_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=174925&_nc_ohc=gukSYpm8zrcAX_tOSel&_nc_ht=scontent.fagr1-2.fna&oh=00_AT953TuHX8oOAFaBIlfS4-2QxROleWpFiKvyAEyIzJ7_4Q&oe=634CBF4C" width="121px" alt="image">
+			<img src="https://scontent.fagr1-2.fna.fbcdn.net/v/t39.30808-6/294659770_111672228282924_8020719861959621506_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=174925&_nc_ohc=TIeucPWR-yEAX-NoFJQ&_nc_ht=scontent.fagr1-2.fna&oh=00_AT-qf6XIT7XioCH6LUjP5DpydBJB8oAT8ZJ27fJFKmeqcg&oe=6352AE0C" width="121px" alt="image">
 		
         </div>
 		<div class="call">
